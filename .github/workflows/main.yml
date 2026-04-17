@@ -1,19 +1,14 @@
 name: Import SQL to Supabase
-
 on:
   workflow_dispatch:
-
 jobs:
   import:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
       - name: Install psql
         run: sudo apt-get install -y postgresql-client
-      
       - name: Import SQL
         env:
           PGPASSWORD: ${{ secrets.DB_PASSWORD }}
-        run: |
-          psql "postgresql://postgres:${{ secrets.DB_PASSWORD }}@db.sucjqwtqprsfuckhkqog.supabase.co:5432/postgres" -f backup_pop_interfit_v2.sql
+        run: psql "postgresql://postgres:${{ secrets.DB_PASSWORD }}@db.sucjqwtqprsfuckhkqog.supabase.co:5432/postgres" -f migration.sql
