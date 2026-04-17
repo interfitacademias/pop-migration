@@ -2,7 +2,6 @@
 -- PostgreSQL database dump
 --
 
-\restrict WenSvMdBil9x9DIyA4lf818FKTXl6g1lw6vOZQpS7Hnfg4yQo2KRJ5VrIM0ZM9z
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.9
@@ -2765,5 +2764,4 @@ ALTER TABLE "public"."usuarios" ENABLE ROW LEVEL SECURITY;
 -- PostgreSQL database dump complete
 --
 
-\unrestrict WenSvMdBil9x9DIyA4lf818FKTXl6g1lw6vOZQpS7Hnfg4yQo2KRJ5VrIM0ZM9z
 
